@@ -1,0 +1,257 @@
+/* Estilos del Nav--------------------------------------------------------*/
+.navbar {
+  background-color: #f8f9fa; /* Un color de fondo suave */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Centra el menú horizontalmente */
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Muestra los elementos en línea */
+  gap: 2rem; /* Espacio entre cada enlace */
+}
+
+.nav-item {
+  /* No se necesita mucho estilo aquí, ya que el enlace se encarga de la apariencia */
+}
+
+.nav-link {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #333; /* Color de texto oscuro */
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Color azul al pasar el ratón */
+}
+/* Estilos del Nav--------------------------------------------------------*/
+
+/* Estilos del Footer--------------------------------------------------------*/
+    .footer {
+  background-color: #333; /* Color de fondo oscuro */
+  color: #fff; /* Color de texto blanco */
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem; /* Un espacio para separarlo del contenido principal */
+}
+
+.footer-text {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Espacio entre los enlaces de redes sociales */
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007bff; /* Color azul al pasar el ratón */
+}
+
+/* Estilos del Footer--------------------------------------------------------*/
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --bg-color: #f8f9fa;
+  --text-color: #555;
+  --card-bg: #ffffff;
+  --hover-color: #0056b3;
+}
+
+/* Estilos generales */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de las secciones */
+.section {
+  padding: 80px 20px;
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 10px auto 0;
+}
+
+/* Sección de Bienvenida (Hero) */
+.hero-section {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Sección Sobre Mí */
+.about-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .about-details {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+}
+
+.about-text {
+  font-size: 1.1rem;
+}
+
+/* Sección de Proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: var(--secondary-color);
+}
+
+.project-description {
+  font-size: 1rem;
+  margin: 0 0 15px;
+}
+
+.project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--hover-color);
+}
+
+/* Sección de Contacto */
+.contact-section {
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--primary-color);
+}
