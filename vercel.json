@@ -2,7 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "ignoreCommand": "echo 'No files ignored'",
   "routes": [
     {
       "src": "/(.*)",
@@ -10,3 +9,4 @@
     }
   ]
 }
+
